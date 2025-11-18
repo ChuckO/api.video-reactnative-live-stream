@@ -131,13 +131,19 @@ dependencies {
   //noinspection GradleDynamicVersion
   implementation "com.facebook.react:react-native:+"
 
-  // implementation("video.api:rtmpdroid:1.2.1-packed")
-  implementation("video.api:android-live-stream:1.4.3") {
-    exclude group: 'video.api', module: 'rtmpdroid'
-    // exclude the transitive dependency to use packed version to avoid conflict with libssl.so and libcrypto.so
-  }
-  // implementation fileTree(dir: "libs", include: ["*.jar", "*.aar"])
-  implementation files("libs/lib-unpacked-release.aar")
+  // // implementation("video.api:rtmpdroid:1.2.1-packed")
+  // implementation("video.api:android-live-stream:1.4.3") {
+  //   exclude group: 'video.api', module: 'rtmpdroid'
+  //   // exclude the transitive dependency to use packed version to avoid conflict with libssl.so and libcrypto.so
+  // }
+  // // implementation fileTree(dir: "libs", include: ["*.jar", "*.aar"])
+  // implementation files("libs/lib-unpacked-release.aar")
 
+  implementation("video.api:android-live-stream:1.4.3")
+
+  // node_modules/@api.video/react-native-livestream/android/libs/rtmpdroid-unpacked-release.aar
+  // implementation files("libs/lib-unpacked-release.aar")
+  // implementation(name: 'lib-unpacked-release', ext: 'aar')
+  compileOnly(name: 'lib-unpacked-release', ext: 'aar')
   implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
 }

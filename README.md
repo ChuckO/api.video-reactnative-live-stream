@@ -262,3 +262,10 @@ Or use [Issues].
 [streampack]: https://github.com/ThibaultBee/StreamPack
 [haishinkit]: https://github.com/shogo4405/HaishinKit.swift
 [issues]: https://github.com/apivideo/api.video-reactnative-live-stream/issues
+
+mvn install:install-file \
+  -Dfile=lib-packed-release.aar \
+  -DgroupId=api.video \
+  -DartifactId=rtmpdroid \
+  -Dversion=9.0.0 \
+  -Dpackaging=aar

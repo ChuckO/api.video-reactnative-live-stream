@@ -1,0 +1,116 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "video.api",
+    "module": "rtmpdroid",
+    "version": "9.0.0-packed",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "packedReleaseApiElements-published",
+      "attributes": {
+        "com.android.build.api.attributes.ProductFlavor:packaging": "packed",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "androidJvm",
+        "packaging": "packed"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.8.22"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "rtmpdroid-9.0.0-packed.aar",
+          "url": "rtmpdroid-9.0.0-packed.aar",
+          "size": 7383798,
+          "sha512": "7327c42c9bcdedfebf50f2ee99c858aaab96611280183d36ac0e83f7b3ecd04e98d7da28295eafe18001163369251ad687bdef355b267e0cb6b3dce90811fdb8",
+          "sha256": "37749e337b6ed23f4ab1456058688ec81d783f5c97235a46619d05975d787645",
+          "sha1": "b61a1caae59c86a73da9de04815d794b628c6723",
+          "md5": "7bddacf471b905b2691f7140d7361528"
+        }
+      ]
+    },
+    {
+      "name": "packedReleaseRuntimeElements-published",
+      "attributes": {
+        "com.android.build.api.attributes.ProductFlavor:packaging": "packed",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "androidJvm",
+        "packaging": "packed"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.core",
+          "module": "core-ktx",
+          "version": {
+            "requires": "1.12.0"
+          }
+        },
+        {
+          "group": "androidx.appcompat",
+          "module": "appcompat",
+          "version": {
+            "requires": "1.6.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.8.22"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "rtmpdroid-9.0.0-packed.aar",
+          "url": "rtmpdroid-9.0.0-packed.aar",
+          "size": 7383798,
+          "sha512": "7327c42c9bcdedfebf50f2ee99c858aaab96611280183d36ac0e83f7b3ecd04e98d7da28295eafe18001163369251ad687bdef355b267e0cb6b3dce90811fdb8",
+          "sha256": "37749e337b6ed23f4ab1456058688ec81d783f5c97235a46619d05975d787645",
+          "sha1": "b61a1caae59c86a73da9de04815d794b628c6723",
+          "md5": "7bddacf471b905b2691f7140d7361528"
+        }
+      ]
+    },
+    {
+      "name": "packedReleaseSourcesElements-published",
+      "attributes": {
+        "com.android.build.api.attributes.ProductFlavor:packaging": "packed",
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "androidJvm",
+        "packaging": "packed"
+      },
+      "files": [
+        {
+          "name": "rtmpdroid-9.0.0-packed-sources.jar",
+          "url": "rtmpdroid-9.0.0-packed-sources.jar",
+          "size": 15891,
+          "sha512": "42d0cece7a1164b58f75bb0be47cbbe584d8451e3bdc0e8a37e625735872c8dd668c6b2ad46faa529ff84999a6eb915ef2f755d5b091d5a479585d4fa421d2ba",
+          "sha256": "6a2308409855390a3011ff9f17b14394e93134e718c68863bb97be88bc24dc88",
+          "sha1": "b74a04bea2774bb36c8d709c950fddafe62ffb06",
+          "md5": "66a28c81090c3cd72d132ed8c89b506f"
+        }
+      ]
+    }
+  ]
+}

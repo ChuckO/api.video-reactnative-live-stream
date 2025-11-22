@@ -153,9 +153,10 @@ repositories {
 dependencies {
   implementation "com.facebook.react:react-native:+"
 
-  implementation("video.api:android-live-stream:1.4.3") 
-  // compileOnly files('libs/rtmpdroid-9.0.0-packed.aar')
-  // implementation("video.api:rtmpdroid:9.0.0")
+  implementation("video.api:android-live-stream:1.4.3")  {
+        exclude group: 'video.api', module: 'rtmpdroid'
+  }
+  implementation files("libs/rtmpdroid-9.0.0-packed.aar") 
  
   implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
 }

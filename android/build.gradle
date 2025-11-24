@@ -156,7 +156,7 @@ dependencies {
   implementation("video.api:android-live-stream:1.4.3")  {
         exclude group: 'video.api', module: 'rtmpdroid'
   }
-  implementation files("lib-unpacked-release.aar") 
+  implementation files("libs/lib-unpacked-release.aar") 
  
   implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
 }
